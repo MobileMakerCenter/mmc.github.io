@@ -1,0 +1,71 @@
+---
+layout: home
+---
+
+
+                                                <!-- /
+                                                  .7
+                                       \       , //
+                                       |\.--._/|//
+                                      /\ ) ) ).'/
+                                     /(  \  // /
+                                    /(   J`((_/ \
+                                   / ) | _\     /
+                                  /|)  \  eJ    L
+                                 |  \ L \   L   L
+                                /  \  J  `. J   L
+                                |  )   L   \/   \
+                               /  \    J   (\   /
+             _....___         |  \      \   \```
+      ,.._.-'        '''--...-||\     -. \   \
+    .'.=.'                    `         `.\ [ Y
+   /   /                                  \]  J
+  Y / Y                                    Y   L
+  | | |          \                         |   L
+  | | |           Y                        A  J
+  |   I           |                       /I\ /
+  |    \          I             \        ( |]/|
+  J     \         /._           /        -tI/ |
+   L     )       /   /'-------'J           `'-:.
+   J   .'      ,'  ,' ,     \   `'-.__          \
+    \ T      ,'  ,'   )\    /|        ';'---7   /
+     \|    ,'L  Y...-' / _.' /         \   /   /
+      J   Y  |  J    .'-'   /         ,--.(   /
+       L  |  J   L -'     .'         /  |    /\
+       |  J.  L  J     .-;.-/       |    \ .' /
+       J   L`-J   L____,.-'`        |  _.-'   |
+        L  J   L  J                  ``  J    |
+        J   L  |   L                     J    |
+         L  J  L    \                    L    \
+         |   L  ) _.'\                    ) _.'\
+         L    \('`    \                  ('`    \
+          ) _.'\`-....'                   `-....'
+         ('`    \
+          `-.___/   sigh. Thanks ghost of Baxter. -->
+
+<div class="home-header">
+      <h1 style="font-size:4em; margin: 0; padding: 0;"><span style="color: lightgreen;">Co</span><span style="color: lightskyblue;">DaS</span> <span style="color: lightpink">Lab</span></h1>
+  <h2 style="margin: 0; padding: 0; margin-top: -20px;">
+      <span style="color: white">The</span>
+      <span style="color: lightgreen">Mobile</span>
+      <span style="color: lightblue";>Maker</span>
+      <span style="color: lightred;">Center</span></h2>
+  <p style="color: white;">______________________</p>
+  <h2>
+    {% for page in site.pages %}
+        {% if page.title %}
+            <a class="home-page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            {% unless forloop.last %}
+            <span class="home-page-link" style="color: white;">&bull;</span>
+            {% endunless %}
+        {% endif %}
+    {% endfor %}
+  </h2>
+</div>
+  <br>
+  <h3 style="color: #fff; indent: 2em;">{{ site.description }}</h3>
+  <br>
+  <!-- <div class='center'>
+    <img src="{{ site.baseurl }}/assets/img/robot_logo.png" height="300px">
+    <div class="clear"></div>
+  </div> -->
