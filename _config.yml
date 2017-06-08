@@ -4,7 +4,7 @@ email: mmcrutgers@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
     A state-of-the-art facility which explores how children learn from playing.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://mobilemakercenter.github.io" # the base hostname & protocol for your site
+url: "http://mmc.rutgers.edu" # the base hostname & protocol for your site
 github_username:  mobilemakercenter
 
 collections:

@@ -1,0 +1,62 @@
+---
+layout: default
+title: People
+---
+<h1 class="center" style="font-size: 5em">{{ page.title}}</h1>
+<br>
+
+{% for person in site.people %}
+    <div class="person">
+        <h2>{{ person.title }}</h2>
+        <h3>{{ person.description }}</h3>
+        {{ person.content }}
+    </div>
+{% endfor %}
+<div class="clear"></div>
+
+{% for person in site.affiliates %}
+    <div class="person">
+        <h2>{{ person.title }}</h2>
+        <h3>{{ person.description }}</h3>
+        {{ person.content }}
+    </div>
+{% endfor %}
+<div class="clear"></div>
+
+<!-- <div class="clear center"><h1>Postdocs</h1></div>
+{% for person in site.postdocs %}
+    <div class="person">
+        <h2>{{ person.title }}</h2>
+        <h3>{{ person.description }}</h3>
+        {{ person.content }}
+    </div>
+{% endfor %}
+
+
+<div class="clear center"><h1>Graduate students</h1></div>
+{% for person in site.graduate_students %}
+    <div class="person">
+        <h2>{{ person.title }}</h2>
+        <h3>{{ person.description }}</h3>
+        {{ person.content }}
+    </div>
+{% endfor %}
+
+<!-- do the same thing when we get undergrads -->
+<div class ="clear center"><h1>Research assistants</h1></div>
+{% for person in site.research_assistants %}
+<div class="person">
+    <h2>{{ person.title }}</h2>
+    <h3>{{ person.description }}</h3>
+    {{ person.content }}
+</div>
+{% endfor %}
+
+<div class="clear center"><h1>Alumni</h1></div>
+{% for person in site.alumni %}
+<div class="person">
+    <h2>{{ person.title }}</h2>
+    <h3>{{ person.description }}</h3>
+    {{ person.content }}
+</div>
+{% endfor %} -->
