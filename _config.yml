@@ -3,21 +3,21 @@ title: The Mobile Maker Center
 email: mmcrutgers@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
     A state-of-the-art facility which explores how children learn from playing.
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "http://mobilemakercenter.github.io" # the subpath of your site, e.g. /blog/
 url: "http://mobilemakercenter.github.io" # the base hostname & protocol for your site
 github_username:  mobilemakercenter
 
 collections:
     people:
       foo: bar
-    postdocs:
-      foo: bar
-    graduate_students:
-      foo: bar
-    research_assistants:
-      foo: bar
-    alumni:
-      foo: bar
+    # postdocs:
+    #   foo: bar
+    # graduate_students:
+    #   foo: bar
+    # research_assistants:
+    #   foo: bar
+    # alumni:
+    #   foo: bar
 
 # Build settings
 markdown: kramdown
